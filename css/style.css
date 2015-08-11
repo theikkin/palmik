@@ -1,0 +1,1275 @@
+
+/* sapphireonline  */
+/* Style: sky blue */
+
+
+/* reset */
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
+
+html{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#222;
+	line-height:22px;
+}
+
+html h3 {
+	font-size:24px;
+	line-height:normal;
+	color:#322828;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+body{
+	/* see below */
+}
+input, 
+textarea{
+	outline:none;/* preventing the chrome and safari nasty yellow border */	
+}
+a:focus{
+	outline:none;
+}
+a, 
+a:visited, 
+a:active{
+	color:#000;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+i{
+	font-size:11px;
+}
+h1{
+	color:#057092;
+}
+h2{
+	color:#057092;
+}
+h3{
+	color:#057092;
+}
+h4{
+	color:#057092;
+}
+h5{
+	color:#057092;
+}
+h6{
+	color:#057092;
+}
+img{
+	border:none;
+}
+p{
+	
+}
+.quote{
+	float:left;
+	width:538px;
+	padding:10px 50px 10px 50px;
+	background:#eee url('../images/quote.png') no-repeat left 10%;
+	font-style:italic;
+	margin:20px 0 10px 0;
+	border:1px solid #d3d3d3;
+}
+.corners{
+	 -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+}
+
+/*
+------------------------------------------------------------------------
+BODY - Background with and without a slider.
+------------------------------------------------------------------------
+*/
+
+#body-bar{
+	background:#eeeeee url('../images/bg-stroke.jpg') repeat-x;
+}
+
+#body{
+	background:#eeeeee url('../images/bg-stroke-2.jpg') repeat-x;
+}
+
+/*
+------------------------------------------------------------------------
+CONTAINERS - DIV Container CSS style.
+------------------------------------------------------------------------
+*/
+
+/* index.html */
+div#container-index{
+	width:1040px;
+	margin:0 auto!important;
+	background: url('../images/slider-bg.jpg') no-repeat;
+	min-height:480px;
+}
+/* index2.html */
+div#container-index2{
+	width:1040px;
+	margin:0 auto!important;
+	background: url('../images/slider-big-bg.jpg') no-repeat;
+	min-height:480px;
+}
+/* the rest */
+div#container-basic{
+	width:1040px;
+	margin:0 auto!important;
+	background: url('../images/header-bg.jpg') no-repeat;
+	min-height:600px;
+}
+
+/*
+------------------------------------------------------------------------
+SLIDER - Header with a slider CSS style. (index.html)
+------------------------------------------------------------------------
+*/
+
+div#header-slider{
+	width:1040px;
+	height:480px;
+	float:left;
+	margin-bottom:20px;
+}
+div#header-slider-in{
+	width:1000px;
+	height:480px;
+	float:left;
+	position:relative;
+	margin-left:20px!important;
+}
+div#slider{
+	width:1000px;
+	height:350px;
+	float:left;
+	margin-top:24px;
+}
+div#slider-thumbs{
+	width:260px;
+	height:330px;
+	float:left;
+	margin:10px;
+}
+div#slider-thumbs-slide{
+	width:260px;
+	height:270px;
+	float:left;
+	background:#fff;
+}
+div#slider-thumbs-slide img{
+	width:100px;
+	height:100px;
+	float:left;
+}
+div#slider-thumbs-slide a,
+div#slider-thumbs-slide a:visited,
+div#slider-thumbs-slide a:active{
+	width:100px;
+	height:100px;
+	float:left;
+	margin:10px;
+	border:4px solid #fff;
+	outline:1px solid #ccc;
+}
+div#slider-thumbs-slide a:hover{
+	border:4px solid #6fd8fa;
+	outline:1px solid #6fd8fa;
+}
+div#slider-thumbs-ctrls{
+	width:111px;
+	height:50px;
+	float:left;
+	background: url('../images/slider-ctrls/ctrls-bg.jpg') no-repeat;
+	margin-left:72px;
+}
+a#slider-thumbs-ctrls-btn-left{
+	width:40px;
+	height:40px;
+	float:left;
+	background: url('../images/slider-ctrls/slider-btn-left.png') no-repeat;
+	margin:5px;
+}
+a#slider-thumbs-ctrls-btn-left:hover{
+	background: url('../images/slider-ctrls/slider-btn-left-hover.png') no-repeat;
+}
+a#slider-thumbs-ctrls-btn-right{
+	width:40px;
+	height:40px;
+	float:right;
+	background: url('../images/slider-ctrls/slider-btn-right.png') no-repeat;
+	margin:5px;
+}
+a#slider-thumbs-ctrls-btn-right:hover{
+	background: url('../images/slider-ctrls/slider-btn-right-hover.png') no-repeat;
+}
+div#slider-holder{
+	width:660px;
+	height:310px;
+	overflow:hidden;
+	position:relative;
+	margin:20px 20px 20px 40px;
+	float:left;
+}
+
+/*
+------------------------------------------------------------------------
+SLIDER BIG - Header with a slider CSS style. (index2.html)
+             This is an slider whit no thumbs!!
+------------------------------------------------------------------------
+*/
+
+div#slider-big-img{
+	width:960px;
+	height:310px;
+	margin:20px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+}
+div#slider-big-ctrls{
+	width:1000px;
+	height:30px;
+	float:left;
+}
+ul.slider-big-ctrls-in{
+	height:30px;
+	width:60px;
+	margin-left:auto;
+	margin-right:auto;	
+}
+div#slider-big-ctrls li{
+	list-style:none;
+	float:left;
+}
+a.slider-indi{
+	width:10px;
+	height:10px;
+	float:left;
+	background: url('../images/slider-ctrls/slider-indi.jpg') no-repeat;
+	margin:10px 5px 0 5px;
+}
+a.activeSlide{
+	width:10px;
+	height:10px;
+	float:left;
+	background: url('../images/slider-ctrls/slider-indi-active.jpg') no-repeat;
+	margin:10px 5px 0 5px;
+}
+
+/*
+------------------------------------------------------------------------
+HEADER - Basic header CSS style.
+------------------------------------------------------------------------
+*/
+
+div#header{
+	width:1040px;
+	height:100px;
+	float:left;
+}
+div#header-in{
+	width:1000px;
+	height:100px;
+	float:left;
+	position:relative;
+	margin-left:20px!important;
+}
+div#menu{
+	width:1000px;
+	height:36px;
+	float:left;
+}
+a.active{
+	text-decoration:none;
+	background:#0594c2;
+}
+
+/* 
+	LEVEL ONE
+*/
+ul.dropdown { 
+	list-style-type:none;
+	position:absolute;
+	height:38px;
+	top:0;
+	right:0;
+	background:#068ab4;
+	border-left:1px solid #32c6f5;
+	border-bottom:1px solid #32c6f5;
+	border-right:1px solid #32c6f5;
+	padding:0 14px 0 14px;
+	z-index:100;
+	-moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+ul.dropdown li { 
+	display:inline;
+	float:left;
+	zoom: 1; 
+}
+ul.dropdown a:hover{ 
+	color: #fff;
+	text-decoration:none;
+}
+ul.dropdown a:active{ 
+	color: #fff; 
+}
+ul.dropdown li a{ 
+	display: block; 
+	color: #fff;
+	height:20px;
+	padding:8px 10px 10px 10px;
+}
+ul.dropdown li.hover,
+ul.dropdown li:hover{ 
+	color: #fff; 
+	position: relative;
+	background:#0594c2;
+}
+ul.dropdown li.hover a{ 
+    color: #fff; 
+}
+/* 
+	LEVEL TWO
+*/
+ul.dropdown li ul {
+	width: 150px; 
+	visibility: hidden; 
+	position: absolute; 
+	top: 100%; 
+	left: 0;
+	background:#068ab4; 
+	border-left:1px solid #32c6f5;
+	border-bottom:1px solid #32c6f5;
+	border-right:1px solid #32c6f5;
+	padding-bottom:0px;
+}
+ul.dropdown li ul li{ 
+	font-weight: normal; 
+	background:#068ab4;  
+	color: #fff; 
+	border-top:1px solid #7aa6bf;
+	float: none;
+	margin:0;
+	width: 150px;
+	height:34px;
+	float:left;
+	padding:0;
+}									  
+/* IE 6 & 7 Needs Inline Block */
+ul.dropdown li ul li a{ 
+	width: 140px;
+	padding: 6px 0px 6px 10px;
+	display: inline-block;
+	margin:0;
+	height:34px;
+} 
+ul.dropdown li ul li a:hover{
+    text-decoration:none;	
+}
+ul.dropdown li ul li:hover{ 
+	width: 150px;
+	display: inline-block;
+	margin:0;
+	background:#0594c2;
+} 
+div#logo{
+	width:520px;
+	height:40px;
+	float:left;
+}
+
+/*
+------------------------------------------------------------------------
+CONTENT - Content wrap CSS style.
+------------------------------------------------------------------------
+*/
+
+div#content{
+	width:960px;
+	min-height:400px!important;
+	float:left;
+	background:#fff;
+	margin:0 20px!important;
+	border:1px solid #d3d3d3;
+	padding:30px 20px 0 20px;
+}
+
+/*
+------------------------------------------------------------------------
+INDEX - Index CSS style.
+------------------------------------------------------------------------
+*/
+
+div#index{
+	width:900px;
+	float:left;
+	margin:0 40px 20px 0;
+}
+div#index-heading{
+	width:940px;
+	float:left;
+	margin-bottom:10px;
+}
+div#index-heading img{
+	float:left;
+	margin:0 20px 0px 0;
+}
+div#index-heading h2{
+	width:560px;
+	float:left;
+	color:#057092;
+	font-size:18px;
+	font-weight:bold;
+	margin-top:2px;
+}
+
+div#index-heading h1{
+	width:7500px;
+	float:left;
+	color:#2F2828;
+	font-size:39px;
+	font-weight:bold;
+	margin-top:35px;
+	margin-bottom:35px;
+}
+div#index-heading p{
+	width:560px;
+	float:left;
+	color:#3388BB;
+	font-size:13px;
+	margin:0;
+}
+div#index-content{
+	float:left;
+}
+div#index-content p{
+	float:left;
+	margin:0px 0 20px 0;
+}
+
+/* this will be display on a new row, 960px */
+div#index-content-one-row{
+	width:960px;
+	float:left;
+	margin:0 0 0px 0;
+	padding-bottom:0px;
+}
+div#content-left-300{
+	width:300px;
+	float:left;
+	margin:0 0px 20px 0px;
+}
+div#content-mid-300{
+	width:300px;
+	float:left;
+	margin:0 30px 20px 30px;
+}
+div#content-right-300{
+	width:300px;
+	float:left;
+	margin:0 0px 20px 0px;
+}
+div#content-left-300 img,
+div#content-mid-300 img,
+div#content-right-300 img{
+	float:left;
+	margin:0 20px 0px 0;
+}
+div#content-left-300 h3,
+div#content-mid-300 h3,
+div#content-right-300 h3{
+	width:232px;
+	float:left;
+	color:#057092;
+	font-size:16px;
+	font-weight:bold;
+	margin:4px 0 16px 0;
+}
+div#content-left-300 p,
+div#content-mid-300 p,
+div#content-right-300 p{
+	width:300px;
+	float:left;
+	margin:0px 0 20px 0;
+}
+div#content-left-300 a,
+div#content-left-300 a:visited,
+div#content-left-300 a:active,
+div#content-mid-300 a,
+div#content-mid-300 a:visited,
+div#content-mid-300 a:active,
+div#content-right-300 a,
+div#content-right-300 a:visited,
+div#content-right-300 a:active{
+	float:left;
+	margin:0 0 20px 0;
+	color:#3388BB;
+}
+
+/*
+------------------------------------------------------------------------
+ABOUT - About CSS style.
+------------------------------------------------------------------------
+*/
+
+div#about{
+	width:640px;
+	float:left;
+	margin:0 40px 20px 0;
+}
+div#about-heading{
+	width:640px;
+	float:left;
+	margin-bottom:10px;
+}
+div#about-heading img{
+	float:left;
+	margin:0 20px 0px 0;
+}
+div#about-heading h2{
+	width:560px;
+	float:left;
+	color:#057092;
+	font-size:18px;
+	font-weight:bold;
+	margin-top:2px;
+}
+div#about-heading p{
+	width:560px;
+	float:left;
+	color:#3388BB;
+	font-size:13px;
+	margin:0;
+}
+div#about-content p{
+	float:left;
+	margin:0 0px 20px 0;
+}
+div.heading{
+	width:100%;
+	float:left;
+	margin-bottom:0px;
+}
+div.heading h1,
+div.heading h2,
+div.heading h3,
+div.heading h4,
+div.heading h5{
+	width:100%;
+	float:left;
+	margin:0 0px 20px 0;
+}
+
+/*
+------------------------------------------------------------------------
+PORTFOLIO - Portfolio CSS style.
+------------------------------------------------------------------------
+*/
+
+div#portfolio{
+	width:960px;
+	float:left;
+	margin:0 0px 0px 0;
+	padding-bottom:0px;
+	position:relative;
+}
+div#portfolio-heading{
+	width:960px;
+	float:left;
+	margin-bottom:10px;
+}
+div#portfolio-heading img{
+	float:left;
+	margin-bottom:100px;
+}
+div#portfolio-heading h2{
+	width:792px;
+	float:left;
+	color:#057092;
+	font-size:28px;
+	font-weight:bold;
+	margin-top:2px;
+}
+div#portfolio-heading p{
+	width:960px;
+	float:left;
+	color:#3388BB;
+	font-size:15px;
+	margin:0;
+}
+div#portfolio-content p{
+	float:left;
+	margin:0 0px 20px 0;
+}
+div#portfolio-all{
+	width:960px;
+	float:left;
+	margin-bottom:10px;
+}
+/* normal view, thumbs */
+ul.display {
+	list-style:none;
+	float:left;
+	margin-bottom:0px;
+}
+ul.display li{
+	float:left;
+}
+ul.display div.project{
+	width:300px;
+	float:left;
+	background:#FFF;
+	margin:0 0 30px 0;
+	position:relative;
+}
+ul.display div.project-mid{
+	width:300px;
+	float:left;
+	background:#FFF;
+	margin:0 30px 30px 30px;
+	position:relative;
+}
+ul.display div.project img,
+ul.display div.project-mid img{
+	border:4px solid #fff;
+	outline:1px solid #ccc;
+	float:left;
+}
+ul.display div.project a.insidelink,
+ul.display div.project a.insidelink:active,
+ul.display div.project a.insidelink:visited,
+ul.display div.project-mid a.insidelink,
+ul.display div.project-mid a.insidelink:active,
+ul.display div.project-mid a.insidelink:visited{
+	position:absolute;
+	left:0;
+	bottom:20px;
+	color:#FFF;
+	padding:0 10px 2px 10px;
+	font-size:18px;
+	background:#900;
+}
+ul.display div.project a:hover,
+ul.display div.project-mid a:hover{
+	text-decoration:none;
+	background:#222;
+}
+ul.display div.project h2.insideh2,
+ul.display div.project-mid h2.insideh2{
+	display:none;
+}
+ul.display div.project p.txt,
+ul.display div.project-mid p.txt{
+    display:none;
+}
+/* switch setting, thumbs + text */
+ul.thumb_view li{
+	list-style:none;
+	float:left;
+	margin-bottom:0px;
+	}
+ul.thumb_view div.project,
+ul.thumb_view div.project-mid{
+	width:960px;
+	float:left;
+	margin:0 0 30px 0;
+	position:relative;
+}
+ul.thumb_view div.project img,
+ul.thumb_view div.project-mid img{
+	border:4px solid #fff;
+	outline:1px solid #ccc;
+	float:left;
+	margin-right:20px;
+}
+ul.thumb_view div.project a.insidelink,
+ul.thumb_view div.project-mid a.insidelink{
+	display:none;
+}
+ul.thumb_view div.project h2.insideh2,
+ul.thumb_view div.project-mid h2.insideh2{
+	float:left;
+	width:640px;
+	display:block;
+	margin-bottom:10px;
+}
+ul.thumb_view div.project p.txt,
+ul.thumb_view div.project-mid p.txt{
+	float:left;
+	width:640px;
+	display:block;
+	margin-bottom:10px;
+	font-size:12px;
+	color:#666;
+}
+/* switch btn*/
+a.switch_thumb {
+    width: 122px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0;
+    margin: 12px 0;
+    display: block;
+    background: url('../images/switch.png') no-repeat;
+    outline: none;
+    text-indent: -9999px;
+	position:absolute;
+	right:0;
+	top:0;
+}
+a.swap { background-position: left bottom; }
+
+/*
+------------------------------------------------------------------------
+BLOG - Blog CSS style.
+------------------------------------------------------------------------
+*/
+
+div#blog{
+	width:640px;
+	float:left;
+	margin:0 40px 20px 0;
+}
+div#blog-heading{
+	width:640px;
+	float:left;
+	margin-bottom:10px;
+}
+div#blog-heading img{
+	float:left;
+	margin:0 20px 0px 0;
+}
+div#blog-heading h2{
+	width:560px;
+	float:left;
+	color:#057092;
+	font-size:18px;
+	font-weight:bold;
+	margin-top:2px;
+}
+div#blog-heading p{
+	width:560px;
+	float:left;
+	color:#3388BB;
+	font-size:13px;
+	margin:0;
+}
+div.blog-post{
+	width:640px;
+	float:left;
+	margin:0 40px 20px 0;
+}
+div.blog-post img{
+	float:left;
+	margin:4px 0px 20px 0;
+}
+div.blog-post h2{
+	width:580px;
+	float:left;
+	color:#057092;
+	font-size:18px;
+	font-weight:bold;
+}
+div.blog-post h2 a,
+div.blog-post h2 a:visited,
+div.blog-post h2 a:active{
+	color:#057092;
+}
+div.blog-post p.subtitle{
+	width:580px;
+	float:left;
+	color:#3388BB;
+	font-size:14px;
+	margin:4px 0 0 0;
+	font-size:12px;
+}
+div.blog-post p{
+	width:640px;
+	float:left;
+	margin:10px 0 10px 0;
+}
+div.blog-post p.readmore a,
+div.blog-post p.readmore a:visited,
+div.blog-post p.readmore a:active{
+	text-decoration:none;
+	color:#FFF;
+	background:#900;
+	padding:2px 4px 2px 4px;
+}
+div.blog-post p.readmore a:hover{
+	text-decoration:none;
+	color:#FFF;
+	background:#222;
+}
+
+/*
+------------------------------------------------------------------------
+CONTACT - Contact CSS style.
+------------------------------------------------------------------------
+*/
+
+div#contact{
+	width:640px;
+	float:left;
+	margin:0 40px 40px 0;
+}
+div#contact-heading{
+	width:640px;
+	float:left;
+	margin-bottom:10px;
+}
+div#contact-heading img{
+	float:left;
+	margin:0 20px 0px 0;
+}
+div#contact-heading h2{
+	width:560px;
+	float:left;
+	color:#057092;
+	font-size:18px;
+	font-weight:bold;
+	margin-top:2px;
+}
+div#contact-heading p{
+	width:560px;
+	float:left;
+	color:#3388BB;
+	font-size:13px;
+	margin:0;
+}
+div#contact-content p{
+	float:left;
+	margin-bottom:20px;
+}
+div#contact-content div.fields{
+	width:640px;
+	float:left;
+	margin-top:20px;
+}
+div.fields label{
+	width:640px;
+	float:left;
+}
+div.fields input{
+	width:360px;
+	height:21px;
+	float:left;
+	border:1px solid #ababab;
+	color:#666;
+	padding:5px 4px 0 4px;
+	margin-bottom:10px;
+}
+div.fields input:focus{
+	border:1px solid #737373;
+}
+div.fields textarea{
+	width:500px;
+	height:200px;
+	float:left;
+	border:1px solid #ababab;
+	color:#666;
+	padding:5px 4px 0 4px;
+	margin:0 60px 10px 0;
+}
+div.fields textarea:focus{
+	border:1px solid #737373;
+}
+div.fields input#send-btn{
+	width:80px;
+	height:28px;
+	float:left;
+	margin:0;
+	color:#FFF;
+	background:#057092;
+	border:1px solid #057092;
+	padding:0 0 0px 0;
+	cursor:pointer;
+}
+div.fields input#send-btn:hover{
+	background:#7aa6bf;
+	border:1px solid #7aa6bf;
+}
+
+/*
+------------------------------------------------------------------------
+SIDEBAR - Sidebar CSS style.
+------------------------------------------------------------------------
+*/
+
+div#sidebar{
+	width:280px;
+	float:left;
+}
+div#sidebar-heading{
+	width:280px;
+	float:left;
+	margin-bottom:10px;
+}
+div#sidebar-heading img{
+	float:left;
+	margin:0 20px 0px 0;
+}
+div#sidebar-heading h3{
+	width:200px;
+	float:left;
+	color:#057092;
+	font-size:18px;
+	font-weight:bold;
+	margin:2px 0 0 0;
+}
+div#sidebar-heading p{
+	width:200px;
+	float:left;
+	color:#3388BB;
+	font-size:13px;
+	margin:0;
+}
+div#sidebar-content{
+	width:280px;
+	float:left;
+	margin:0 0 20px 0;
+}
+div#sidebar-content p{
+	width:280px;
+	float:left;
+	margin:0 0 20px 0;
+}
+div#sidebar-content ul.features{
+	width:290px;
+	float:left;
+	list-style-position:inside;
+	padding-left:20px;
+	margin:0 0 20px 0;
+}
+div#search{
+	float:left;
+	margin-bottom:40px;
+}
+div#search h3{
+	width:280px;
+	float:left;
+	margin-bottom:10px;
+	color:#057092;
+	font-size:18px;
+	font-weight:bold;
+}
+div#search input{
+	width:184px;
+	height:21px;
+	float:left;
+	margin:0;
+	border:1px solid #ababab;
+	color:#666;
+	padding:5px 4px 0 4px;
+}
+div#search input:focus{
+	border:1px solid #737373;
+}
+div#search input#search-btn{
+	width:80px;
+	height:28px;
+	float:right;
+	margin:0;
+	color:#FFF;
+	background:#057092;
+	border:1px solid #057092;
+	padding:0 0 0px 0;
+	cursor:pointer;
+}
+div#search input#search-btn:hover{
+	background:#7aa6bf;
+	border:1px solid #7aa6bf;
+}
+div#social{
+	float:left;
+	margin-bottom:40px;
+}
+div#social h3{
+	width:280px;
+	float:left;
+	margin-bottom:10px;
+	color:#057092;
+	font-size:18px;
+	font-weight:bold;
+}
+div#social img{
+	float:left;
+	margin:0 3px 0 0;
+}
+div#company{
+	float:left;
+	margin-bottom:40px;
+}
+div#company h3{
+	width:280px;
+	float:left;
+	margin-bottom:14px;
+	color:#057092;
+	font-size:18px;
+	font-weight:bold;	
+}
+div#company img{
+	float:left;
+	margin-bottom:10px;
+}
+div#company img.img-float{
+	float:right;
+	margin-bottom:10px;
+}
+div#submenu{
+	float:left;
+	margin-bottom:40px;
+}
+div#submenu h3{
+	width:280px;
+	float:left;
+	margin-bottom:10px;
+	color:#057092;
+	font-size:18px;
+	font-weight:bold;	
+}
+div#submenu ul{
+	float:left;
+	list-style-type:none;
+	border-top:1px solid #ccc;
+}
+div#submenu ul li{
+
+}
+div#submenu ul li a,
+div#submenu ul li a:active,
+div#submenu ul li a:visited{
+	width:260px;
+	display:block;
+	border-bottom:1px solid #ccc;
+	padding:4px 0 4px 20px;
+	background:url('../images/bullit.jpg') no-repeat 0px 10px;
+	color:#222;
+}
+div#submenu ul li a:hover{
+	border-bottom:1px solid #ccc;
+	text-decoration:none;
+	background:#eee url('../images/bullit-hover.jpg') no-repeat 0px 10px;
+}
+div#contact-details{
+	float:left;
+	margin-bottom:40px;
+	margin-top:40px;
+}
+div#contact-details h3{
+	width:280px;
+	float:left;
+	margin-bottom:10px;
+	color:#057092;
+	font-size:18px;
+	font-weight:bold;
+}
+div#contact-details p{
+	float:left;
+	width:280px;
+	margin:0;
+}
+div#products{
+	float:left;
+	margin-bottom:30px;
+}
+div#products h3{
+	width:280px;
+	float:left;
+	margin-bottom:10px;
+	color:#057092;
+	font-size:18px;
+	font-weight:bold;
+}
+div#products img{
+	float:left;
+	margin-bottom:10px;
+}
+div#map{
+	float:left;
+	margin-bottom:40px;
+}
+div#map h3{
+	width:280px;
+	float:left;
+	margin-bottom:14px;
+	color:#00214c;
+	font-size:18px;
+	font-weight:bold;	
+}
+div#map img{
+	float:left;
+	margin-bottom:0px;
+	border:1px solid #ccc;
+}
+
+/*
+------------------------------------------------------------------------
+FOOTER - Footer CSS style.
+------------------------------------------------------------------------
+*/
+
+div#footer{
+	width:1000px;
+	height:40px;
+	float:left;
+	background:#fff;
+	margin:10px 0 0px 20px;
+	border:1px solid #d3d3d3;
+	position:relative;
+}
+div#footer p{
+	float:left;
+	width:400px;
+	margin:9px 0 0 20px;
+	color:#666;
+}
+div#footer p a,
+div#footer p a:active,
+div#footer p a:visited{
+	text-decoration:underline;
+	color:#666;
+}
+div#footer p a:hover{
+	text-decoration:underline;
+	color:#222;
+}
+div#footer ul{
+	float:right;
+	margin:8px 38px 0 0px;
+}
+div#footer li{
+	display:inline;
+	margin:9px 6px 9px 6px;
+}
+div#footer ul a,
+div#footer ul a:active,
+div#footer ul a:visited{
+	color:#666;
+}
+div#footer ul a:hover{
+	color:#222;
+}
+div#footer img{
+	position:absolute;
+	right:20px;
+	top:14px;
+}
+div#bottomspacer{
+	width:1000px;
+	height:20px;
+	float:left;
+}
+/*
+------------------------------------------------------------------------
+PAGE NAVIGATION - Page Navigation CSS style.(blog.html)
+------------------------------------------------------------------------
+*/
+
+div#page-nav {
+	width:640px;
+	float:left;
+	height:26px;
+	margin:20px 0 20px 0;
+}
+div#page-nav ul{
+	width:640px;
+	height:24px;
+	float:left;
+	padding:0;
+}
+div#page-nav li{
+	height:24px;
+	list-style-type: none;
+	display: inline;
+	float:left;
+	padding: 0px;
+	margin:0 4px 0 0px;
+}
+div#page-nav a, 
+div#page-nav a:visited,
+div#page-nav a:active{
+	width:24px;
+	height:23px;
+	text-decoration: none; 
+	border:1px solid #ccc;
+	color: #666;
+	float:left;
+	font-size:12px;
+	text-align:center;
+	padding:1px 0 0 0;
+}
+div#page-nav a:hover{
+	border:1px solid #057092;
+	color: #057092;
+}
+div#page-nav a.currentpage{
+	border:1px solid #057092;
+	color: #057092;
+	font-weight: normal;
+	cursor: default;
+}
+div#page-nav a.disablelink, 
+div#page-nav a.disablelink:hover{
+	border:1px solid #ccc;
+	color: #ccc;
+	font-weight: normal;
+	cursor: default;
+}
+div#page-nav a#prev{
+	width:70px;
+	height:23px;
+	float:left;
+	padding-top:1px;
+}
+div#page-nav a#next{
+    width:70px;
+	height:23px;
+	margin-left:0px;
+	padding-top:1px;
+}
+
+/*
+------------------------------------------------------------------------
+LIVE VALIDATION - Live Validation CSS style.(contact.html)
+------------------------------------------------------------------------
+*/
+
+.LV_validation_message{
+    font-weight:bold;
+	float:right;
+	padding-right:130px;
+}
+
+.LV_valid {
+    color:#00CC00;
+}
+	
+.LV_invalid {
+    color:#ff0000;
+}
+    
+.LV_valid_field,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active {
+
+}
+    
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active,
+select.LV_invalid_field:active,
+select.LV_invalid_field:hover  {
+
+}
+
