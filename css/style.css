@@ -148,13 +148,13 @@ div#slider{
 	margin-top:24px;
 }
 div#slider-thumbs{
-	width:260px;
+	width:460px;
 	height:330px;
 	float:left;
 	margin:10px;
 }
 div#slider-thumbs-slide{
-	width:260px;
+	width:460px;
 	height:270px;
 	float:left;
 	background:#fff;
