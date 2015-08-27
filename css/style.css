@@ -354,10 +354,9 @@ ul.dropdown li ul li{
 	background:#068ab4;  
 	color: #fff; 
 	border-top:1px solid #7aa6bf;
-	float: none;
 	margin:0;
 	width: 150px;
-	height:34px;
+	height:auto;
 	float:left;
 	padding:0;
 }									  
